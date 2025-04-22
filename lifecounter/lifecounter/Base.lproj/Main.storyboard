@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_3" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,121 +13,165 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="402" height="874"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjY-80-YZi">
-                                <rect key="frame" x="34" y="360" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="+"/>
-                                <connections>
-                                    <action selector="player1AddOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnu-9o-RAG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2J-Wr-aa7">
-                                <rect key="frame" x="200" y="360" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owh-dZ-gEX">
+                                <rect key="frame" x="149" y="244" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2J-Wr-aa7">
+                                <rect key="frame" x="219.33333333333337" y="185" width="31.666666666666629" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="31.666666666666657" id="eKX-6q-2y2"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-"/>
                                 <connections>
                                     <action selector="player1RemoveOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JEk-ky-JO2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-Pt-oFL">
-                                <rect key="frame" x="117" y="360" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjY-80-YZi">
+                                <rect key="frame" x="94" y="185" width="34.333333333333343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="34.333333333333343" id="Sms-jV-E0q"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="+5"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
                                 <connections>
-                                    <action selector="player1AddFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gB-QL-ZN2"/>
+                                    <action selector="player1AddOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hnu-9o-RAG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-qS-XZ4">
-                                <rect key="frame" x="283" y="360" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLL-qS-XZ4">
+                                <rect key="frame" x="266" y="185" width="42" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="cit-Sb-A2a"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="-5"/>
                                 <connections>
                                     <action selector="player1RemoveFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QuN-O8-do0"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALn-3q-lsk">
-                                <rect key="frame" x="165" y="217" width="59" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WeL-TS-iLq">
-                                <rect key="frame" x="34" y="600" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="+"/>
-                                <connections>
-                                    <action selector="player2AddOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oe3-eD-PYS"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXF-SC-wjU">
-                                <rect key="frame" x="200" y="600" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="-"/>
-                                <connections>
-                                    <action selector="player2RemoveOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dLo-nq-cNk"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZW-zD-hzO">
-                                <rect key="frame" x="117" y="600" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpe-Pt-oFL">
+                                <rect key="frame" x="159.66666666666666" y="185" width="44.666666666666657" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="+5"/>
                                 <connections>
-                                    <action selector="player2AddFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iQU-DL-LVr"/>
+                                    <action selector="player1AddFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9gB-QL-ZN2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzm-sU-Kdt">
-                                <rect key="frame" x="283" y="600" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="-5"/>
-                                <connections>
-                                    <action selector="player2RemoveFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iNZ-kL-r4h"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owh-dZ-gEX">
-                                <rect key="frame" x="165" y="457" width="61" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player X Loses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7H-yc-G5R">
+                                <rect key="frame" x="29" y="395" width="344" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="McQ-ap-Tbt">
-                                <rect key="frame" x="150" y="524" width="92" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2D-ln-05K">
+                                <rect key="frame" x="156" y="288" width="92" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nkV-lP-ldW">
-                                <rect key="frame" x="150" y="285" width="92" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuh-e9-fRh">
+                                <rect key="frame" x="156" y="116" width="92" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALn-3q-lsk">
+                                <rect key="frame" x="149" y="72" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2e-0T-Awf">
+                                <rect key="frame" x="94" y="357" width="34.333333333333343" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+"/>
+                                <connections>
+                                    <action selector="player2AddOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hdV-fZ-CZa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AZy-do-bbE">
+                                <rect key="frame" x="159.66666666666666" y="357" width="44.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="+5"/>
+                                <connections>
+                                    <action selector="player2AddFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aoJ-Nx-fmH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7SQ-Qq-M9v">
+                                <rect key="frame" x="219.33333333333337" y="357" width="31.666666666666629" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-"/>
+                                <connections>
+                                    <action selector="player2RemoveOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WbB-Ai-KSm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwl-mx-CtI">
+                                <rect key="frame" x="266" y="357" width="42" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="-5"/>
+                                <connections>
+                                    <action selector="player2RemoveFive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zB8-sl-15A"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="w2J-Wr-aa7" firstAttribute="leading" secondItem="7SQ-Qq-M9v" secondAttribute="leading" id="0fE-Mo-lk5"/>
+                            <constraint firstItem="owh-dZ-gEX" firstAttribute="top" secondItem="cjY-80-YZi" secondAttribute="bottom" constant="24" id="19F-Gk-L1p"/>
+                            <constraint firstItem="ALn-3q-lsk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="C8G-hb-6rs"/>
+                            <constraint firstItem="owh-dZ-gEX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="Eb9-tl-OYn"/>
+                            <constraint firstItem="7SQ-Qq-M9v" firstAttribute="top" secondItem="T2D-ln-05K" secondAttribute="bottom" constant="40" id="LqW-h0-txv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mLL-qS-XZ4" secondAttribute="trailing" constant="94" id="NRn-vT-Pwc"/>
+                            <constraint firstItem="T2D-ln-05K" firstAttribute="top" secondItem="owh-dZ-gEX" secondAttribute="bottom" constant="23" id="Nq1-D4-qbb"/>
+                            <constraint firstItem="ALn-3q-lsk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="Ob0-V0-ygW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r7H-yc-G5R" secondAttribute="trailing" constant="29" id="Oob-aK-YDo"/>
+                            <constraint firstItem="iwl-mx-CtI" firstAttribute="leading" secondItem="7SQ-Qq-M9v" secondAttribute="trailing" constant="15" id="Qk9-EV-ixh"/>
+                            <constraint firstItem="kpe-Pt-oFL" firstAttribute="top" secondItem="Kuh-e9-fRh" secondAttribute="bottom" constant="40" id="QnX-ax-ZDL"/>
+                            <constraint firstItem="AZy-do-bbE" firstAttribute="leading" secondItem="c2e-0T-Awf" secondAttribute="trailing" constant="31.329999999999998" id="R9d-tD-VT7"/>
+                            <constraint firstItem="kpe-Pt-oFL" firstAttribute="leading" secondItem="cjY-80-YZi" secondAttribute="trailing" constant="31.329999999999998" id="Sdh-vw-KwF"/>
+                            <constraint firstItem="ALn-3q-lsk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Snj-e8-z9g"/>
+                            <constraint firstItem="w2J-Wr-aa7" firstAttribute="top" secondItem="Kuh-e9-fRh" secondAttribute="bottom" constant="40" id="VeC-0X-Y1r"/>
+                            <constraint firstItem="w2J-Wr-aa7" firstAttribute="leading" secondItem="kpe-Pt-oFL" secondAttribute="trailing" constant="15" id="WIv-fq-yGf"/>
+                            <constraint firstItem="ALn-3q-lsk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Xcb-BY-gJ8"/>
+                            <constraint firstItem="7SQ-Qq-M9v" firstAttribute="leading" secondItem="AZy-do-bbE" secondAttribute="trailing" constant="15" id="YVQ-Lx-NGd"/>
+                            <constraint firstItem="r7H-yc-G5R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="Zbi-ke-UrO"/>
+                            <constraint firstItem="T2D-ln-05K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="bxC-qC-ifc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Kuh-e9-fRh" secondAttribute="trailing" constant="154" id="d9o-VE-Oav"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="owh-dZ-gEX" secondAttribute="trailing" constant="150" id="fjz-BT-mHm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ALn-3q-lsk" secondAttribute="trailing" constant="150" id="fs6-VL-EbX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T2D-ln-05K" secondAttribute="trailing" constant="154" id="gFf-bv-54r"/>
+                            <constraint firstItem="c2e-0T-Awf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="hLS-4H-Pv9"/>
+                            <constraint firstItem="cjY-80-YZi" firstAttribute="top" secondItem="Kuh-e9-fRh" secondAttribute="bottom" constant="40" id="ht4-aE-1bu"/>
+                            <constraint firstItem="c2e-0T-Awf" firstAttribute="top" secondItem="T2D-ln-05K" secondAttribute="bottom" constant="40" id="knP-YO-rSb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iwl-mx-CtI" secondAttribute="trailing" constant="94" id="ljX-s1-4mm"/>
+                            <constraint firstItem="Kuh-e9-fRh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="ltc-ex-vSI"/>
+                            <constraint firstItem="mLL-qS-XZ4" firstAttribute="leading" secondItem="w2J-Wr-aa7" secondAttribute="trailing" constant="15" id="mD7-Yr-R3F"/>
+                            <constraint firstItem="iwl-mx-CtI" firstAttribute="top" secondItem="T2D-ln-05K" secondAttribute="bottom" constant="40" id="nUj-fc-7jg"/>
+                            <constraint firstItem="AZy-do-bbE" firstAttribute="top" secondItem="T2D-ln-05K" secondAttribute="bottom" constant="40" id="pGl-BV-nph"/>
+                            <constraint firstItem="Kuh-e9-fRh" firstAttribute="top" secondItem="ALn-3q-lsk" secondAttribute="bottom" constant="23" id="sFC-Bs-p2N"/>
+                            <constraint firstItem="owh-dZ-gEX" firstAttribute="top" secondItem="ALn-3q-lsk" secondAttribute="bottom" constant="151" id="sb3-aH-TBl"/>
+                            <constraint firstItem="kpe-Pt-oFL" firstAttribute="leading" secondItem="AZy-do-bbE" secondAttribute="leading" id="tzE-Ja-9GF"/>
+                            <constraint firstItem="r7H-yc-G5R" firstAttribute="top" secondItem="owh-dZ-gEX" secondAttribute="bottom" constant="130" id="wUQ-Wj-FbV"/>
+                            <constraint firstItem="cjY-80-YZi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="xJY-zj-7LW"/>
+                            <constraint firstItem="mLL-qS-XZ4" firstAttribute="top" secondItem="Kuh-e9-fRh" secondAttribute="bottom" constant="40" id="zev-gu-KxC"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="Player1Life" destination="nkV-lP-ldW" id="3W1-lU-ofs"/>
-                        <outlet property="Player2Life" destination="McQ-ap-Tbt" id="rLx-u0-3sd"/>
+                        <outlet property="Player1Life" destination="Kuh-e9-fRh" id="hFt-X0-dK9"/>
+                        <outlet property="Player2Life" destination="T2D-ln-05K" id="V8k-nF-mEG"/>
+                        <outlet property="loserLabel" destination="r7H-yc-G5R" id="lVD-Xe-rv6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="41.791044776119399" y="-4.805491990846682"/>
         </scene>
     </scenes>
     <resources>
