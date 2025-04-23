@@ -11,6 +11,8 @@ class PlayerView: UIView {
     @IBOutlet weak var PlayerLabel: UILabel!
     @IBOutlet weak var LifeCountLabel: UILabel!
     
+    @IBOutlet weak var textInput: UITextField!
+    
     var playerNumber : Int = 0
     var lifeCount: Int = 20 {
         didSet {
@@ -48,5 +50,16 @@ class PlayerView: UIView {
     }
     @IBAction func minusOneButton(_ sender: Any) {
         lifeCount -= 1
+    }
+    
+    @IBAction func textInputMinus(_ sender: Any) {
+        if Int(textInput.text!) != nil {
+            lifeCount -= Int(textInput.text!)!
+        }
+    }
+    @IBAction func textInputPlus(_ sender: Any) {
+        if Int(textInput.text!) != nil {
+            lifeCount += Int(textInput.text!)!
+        }
     }
 }
