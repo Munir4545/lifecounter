@@ -13,6 +13,16 @@ class ViewController: UIViewController {
     
     var playerViews : [PlayerView] = []
     var gameStart = false
+    var historyList : [String] = []
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        addPlayer()
+        addPlayer()
+        addPlayer()
+        addPlayer()
+    }
             
     @IBAction func addPlayerButton(_ sender: Any) {
         addPlayer()
@@ -29,13 +39,18 @@ class ViewController: UIViewController {
             alertMessage(title: "Maximum", message: "Can only have a maximum of 8 players")
             return
         }
-
+        
+        
         
         let playerView = PlayerView(frame: .zero)
         playerView.playerNumber = playerViews.count+1
+        playerView.viewController = self
         playerView.lifeCount = 20
         
-        playerView.translatesAutoresizingMaskIntoConstraints = false
+        guard stackView != nil else {
+            return
+        }
+        
         stackView.addArrangedSubview(playerView)
 
         playerViews.append(playerView)
@@ -73,15 +88,23 @@ class ViewController: UIViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-//        checkLoserStatus()
-        for _ in 1...4 {
-            addPlayer()
+    func historyProcess(player: Int, amount: Int) {
+        var change = "Player \(player)"
+        if amount > 0 {
+            change += " gained \(amount)"
+        } else {
+            change += " lost \(abs(amount))"
+        }
+        historyList.append(change)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "HistorySegue" {
+            if let HistoryViewController = segue.destination as? HistoryViewController {
+                HistoryViewController.history = self.historyList
+            }
         }
     }
-
 
 }
 

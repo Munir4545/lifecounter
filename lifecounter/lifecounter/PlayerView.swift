@@ -13,10 +13,16 @@ class PlayerView: UIView {
     
     @IBOutlet weak var textInput: UITextField!
     
+    weak var viewController: ViewController?
+    
     var playerNumber : Int = 0
     var lifeCount: Int = 20 {
         didSet {
             playerLabel()
+            
+            if lifeCount != oldValue {
+                viewController?.historyProcess(player: playerNumber, amount: lifeCount-oldValue)
+            }
         }
     }
     

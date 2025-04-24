@@ -80,7 +80,7 @@
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" systemColor="systemGray4Color"/>
             <constraints>
                 <constraint firstItem="YAB-P6-4WQ" firstAttribute="top" secondItem="X1z-mt-dOE" secondAttribute="bottom" constant="6" id="2de-nc-wGj"/>
                 <constraint firstItem="o04-Rt-uBI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="29" id="3DR-80-e8G"/>
@@ -110,8 +110,8 @@
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

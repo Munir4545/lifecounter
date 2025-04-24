@@ -24,12 +24,19 @@
                                     <action selector="addPlayerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="giF-Wt-gdG"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EJr-1P-ZqJ">
-                                <rect key="frame" x="16" y="105" width="370" height="692"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="EJr-1P-ZqJ">
+                                <rect key="frame" x="16" y="105" width="370" height="735"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l8-iE-zb2">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i08-qB-d1k">
+                                <rect key="frame" x="162" y="62" width="79" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="History"/>
+                                <connections>
+                                    <segue destination="0zA-PY-e3O" kind="show" identifier="HistorySegue" id="2w0-gQ-dbe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9l8-iE-zb2">
                                 <rect key="frame" x="249" y="62" width="137" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Remove Player">
                                     <color key="baseForegroundColor" systemColor="systemPinkColor"/>
@@ -43,19 +50,36 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="0Vk-96-Xi1" firstAttribute="leading" secondItem="EJr-1P-ZqJ" secondAttribute="leading" id="OIc-6Z-uNa"/>
+                            <constraint firstItem="EJr-1P-ZqJ" firstAttribute="top" secondItem="9l8-iE-zb2" secondAttribute="bottom" constant="8" symbolic="YES" id="U9E-Ta-kht"/>
                             <constraint firstItem="0Vk-96-Xi1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WrC-5h-eXO"/>
+                            <constraint firstItem="i08-qB-d1k" firstAttribute="leading" secondItem="0Vk-96-Xi1" secondAttribute="trailing" constant="40" id="Xmb-LJ-FOK"/>
                             <constraint firstItem="EJr-1P-ZqJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="bTx-v5-72v"/>
-                            <constraint firstItem="EJr-1P-ZqJ" firstAttribute="top" secondItem="0Vk-96-Xi1" secondAttribute="bottom" constant="8" symbolic="YES" id="ivs-WS-Jmk"/>
+                            <constraint firstItem="EJr-1P-ZqJ" firstAttribute="top" secondItem="0Vk-96-Xi1" secondAttribute="bottom" constant="8" symbolic="YES" id="h2J-3F-qZR"/>
+                            <constraint firstItem="i08-qB-d1k" firstAttribute="leading" secondItem="0Vk-96-Xi1" secondAttribute="trailing" constant="40" id="ikY-Pg-elL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9l8-iE-zb2" secondAttribute="trailing" constant="16" id="ryG-pe-kc7"/>
+                            <constraint firstItem="0Vk-96-Xi1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sza-dv-PXw"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EJr-1P-ZqJ" secondAttribute="trailing" constant="16" id="tIU-J0-FRe"/>
+                            <constraint firstItem="EJr-1P-ZqJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="43" id="v4h-mV-uDS"/>
+                            <constraint firstItem="EJr-1P-ZqJ" firstAttribute="top" secondItem="i08-qB-d1k" secondAttribute="bottom" constant="8" symbolic="YES" id="vTC-f5-jgt"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="stackView" destination="EJr-1P-ZqJ" id="3gE-ni-evU"/>
+                        <outlet property="stackView" destination="EJr-1P-ZqJ" id="qkY-Ip-m3V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="41.791044776119399" y="-4.805491990846682"/>
+        </scene>
+        <!--HistoryViewController-->
+        <scene sceneID="TaV-RU-wzt">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="HistoryViewController" storyboardName="History" referencedIdentifier="HistoryViewController" id="0zA-PY-e3O" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="kqe-04-ZSQ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SKQ-aw-OAR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-5"/>
         </scene>
     </scenes>
     <resources>
